@@ -1,3 +1,4 @@
+import atu.ie.Customer;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -5,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class TestCustomer {
     Customer TestCase;
     String Name = "Winston";
-    String Last = "Blogs";
+    String Last = "Smith";
     String Id = "1234567891011";
     String Address = "84 Victory mansion";
 
@@ -55,7 +56,7 @@ public class TestCustomer {
 
     @Test
     void ConstructPass(){
-        TestCase = Customer(Name, Last, Id, Address);
+        TestCase = new Customer(Name, Last, Id, Address);
         assertNotNull(TestCase);
     }
 
