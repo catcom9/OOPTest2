@@ -7,8 +7,8 @@ public class TestCustomer {
     Customer TestCase;
     String Name = "Winston";
     String Last = "Smith";
-    String Id = "1234567891011";
-    String Address = "84 Victory mansion";
+    String Id = "12345678910";
+    String Address = "84 Victory mansions";
 
 
     @Test

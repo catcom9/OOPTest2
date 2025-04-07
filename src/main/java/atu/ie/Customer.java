@@ -24,6 +24,15 @@ public class Customer {
             throw new IllegalArgumentException("ID too long");
         }
 
+        if(address.length() <= 10){
+            throw new IllegalArgumentException("Address too short");
+        }
+
+        if(address.length() >= 40){
+            throw new IllegalArgumentException("Address too long");
+        }
+
+
         this.First_Name = first_Name;
         this.Second_Name = second_Name;
         this.ID = ID;
