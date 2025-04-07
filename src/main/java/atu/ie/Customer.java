@@ -16,6 +16,14 @@ public class Customer {
             throw new IllegalArgumentException("Last name too short");
         }
 
+        if(ID.length() < 8){
+            throw new IllegalArgumentException("ID too short");
+        }
+
+        if(ID.length() > 12){
+            throw new IllegalArgumentException("ID too long");
+        }
+
         this.First_Name = first_Name;
         this.Second_Name = second_Name;
         this.ID = ID;
